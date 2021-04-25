@@ -1,10 +1,10 @@
 <template>
-  <v-footer absolute dark padless app>
+  <v-footer absolute dark padless app color="rgb(164,4,4)">
     <v-card
       flat
       tile
       width="100%"
-      class="grey darken-4 white--text text-center"
+      class="white--text text-center"
     >
       <v-card-text>
         <v-img contain src="../../assets/img/logo.png" height="50"> </v-img>
@@ -12,10 +12,15 @@
 
       <v-card-text class="white--text">
         <p>
-          NEW CREATION STUDIOS <br />38-2272 Mowat Avenue, Oakville, Ontario,
-          L6H-5L8 <br /><a href="mailto:bookings@newcreationstudios.com"
-            >bookings@newcreationstudios.com</a
+          NEW CREATION STUDIOS <br />
+          38-2272 Mowat Avenue, Oakville, Ontario, L6H-5L8 <br />
+          <a
+            href="mailto:bookings@newcreationstudios.com"
+            class="font-weight-bold white--text"
           >
+            bookings@newcreationstudios.com
+          </a>
+          <v-icon class="pa-1">mdi-email</v-icon>
         </p>
       </v-card-text>
 
@@ -32,6 +37,7 @@
         </v-btn>
       </v-card-text>
     </v-card>
+
     <v-divider></v-divider>
 
     <v-card-text>

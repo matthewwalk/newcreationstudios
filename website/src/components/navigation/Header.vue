@@ -3,7 +3,7 @@
     <v-app-bar
       dark
       prominent
-      color="grey darken-4"
+      color="rgb(164,4,4)"
       src="../../assets/video/wave_still.jpg"
       fade-img-on-scroll
       dense
@@ -43,28 +43,16 @@
       <template v-slot:extension>
         <v-tabs
           v-model="tab"
-          align-with-title
           grow
-          dark
+          color="white"
           background-color="rgba(0,0,0,0.70)"
         >
+       <v-tabs-slider color="white"></v-tabs-slider>
           <v-tab v-for="item in items" :key="item.id" :to="item.path">
             {{ item.title }}
           </v-tab>
         </v-tabs>
       </template>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" dark absolute temporary>
@@ -86,11 +74,11 @@ export default {
       tab: null,
       drawer: false,
       items: [
-        {
-          id: 1,
-          title: "Studio",
-          path: "/studio",
-        },
+        // {
+        //   id: 1,
+        //   title: "Studio",
+        //   path: "/studio",
+        // },
         {
           id: 2,
           title: "Photography",

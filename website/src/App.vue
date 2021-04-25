@@ -5,7 +5,7 @@
     <v-main
       ><!--where pages are to be loaded-->
       <v-container fluid>
-        <v-fade-transition mode="out-in">
+        <v-fade-transition mode="out-in" :hide-on-leave="true">
           <router-view />
         </v-fade-transition>
       </v-container>
@@ -29,5 +29,6 @@ export default {
   data: () => ({
     //
   }),
+
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <v-container overflow-hidden>
+  <v-card class ="pa-2">
     <v-row dense>
       <v-col
         v-for="image in images"
@@ -8,14 +8,14 @@
         sm="6"
         md="3"
       >
-        <v-container class="overflow-hidden">
+        <v-card class="overflow-hidden" tile>
           <v-img
             :src="image.pathLong"
             aspect-ratio="0.8"
-            class="grey lighten-2 zoom"
+            class="zoom"
           >
             <template v-slot:placeholder>
-              <v-card width="100%" height="100%" color="grey darken-3">
+              <v-card width="100%" height="100%" color="grey darken-3" >
                 <v-row class="fill-height ma-0" align="center" justify="center">
                   <v-progress-circular
                     indeterminate
@@ -25,10 +25,10 @@
               </v-card>
             </template>
           </v-img>
-        </v-container>
+        </v-card>
       </v-col>
     </v-row>
-  </v-container>
+  </v-card>
 </template>
 
 <script>
@@ -36,6 +36,7 @@ export default {
   data() {
     return {
       images: [],
+      dialog: false,
     };
   },
   mounted() {
