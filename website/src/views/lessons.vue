@@ -4,7 +4,7 @@
       <v-spacer></v-spacer>
       <v-row class="mx-auto pa-4">
         <v-card class="mx-auto pa-4" elevation="10" dark max->
-          <v-card-title class="display-2 font-weight-black white--text">
+          <v-card-title class="display-1 font-weight-black white--text">
             Music Lessons
           </v-card-title>
           <v-card-subtitle class="">

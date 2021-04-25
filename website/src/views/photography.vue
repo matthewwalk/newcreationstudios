@@ -69,7 +69,7 @@
 
     <v-container fluid>
       <v-card class="mx-auto pa-4" elevation="2">
-        <v-card-title class="display-2 font-weight-black white--text">
+        <v-card-title class="display-1 font-weight-black white--text">
           Customer Testimony
         </v-card-title>
 
@@ -90,7 +90,7 @@
 
     <v-container fluid>
       <v-card class="mx-auto pa-4" elevation="2">
-        <v-card-title class="display-2 font-weight-black white--text">
+        <v-card-title class="display-1 font-weight-black white--text">
           Portfolio
         </v-card-title>
         <v-divider></v-divider>
@@ -101,7 +101,7 @@
 
     <v-container fluid>
       <v-card class="mx-auto pa-4" elevation="2">
-        <v-card-title class="display-2 font-weight-black white--text">
+        <v-card-title class="display-1 font-weight-black white--text">
           Like what you see?
         </v-card-title>
         <v-divider></v-divider>
