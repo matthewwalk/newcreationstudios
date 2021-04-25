@@ -12,9 +12,7 @@
       elevate-on-scroll
     >
       <template v-slot:img="{ props }">
-        <v-img
-          v-bind="props"
-        >
+        <v-img v-bind="props">
           <video-background
             :src="require('../../assets/video/wave.mp4')"
             style="max-height: 300px; height: 100vh"
@@ -35,13 +33,21 @@
 
       <v-toolbar-title class="pa-2">
         <div class="hidden-md-and-up">NCS</div>
-        <div class="hidden-sm-and-down">New Creation Studios</div>
+        <div class="hidden-sm-and-down font-weight-black">
+          New Creation Studios
+        </div>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
       <template v-slot:extension>
-        <v-tabs v-model="tab" align-with-title grow dark background-color="rgba(0,0,0,0.70)">
+        <v-tabs
+          v-model="tab"
+          align-with-title
+          grow
+          dark
+          background-color="rgba(0,0,0,0.70)"
+        >
           <v-tab v-for="item in items" :key="item.id" :to="item.path">
             {{ item.title }}
           </v-tab>
