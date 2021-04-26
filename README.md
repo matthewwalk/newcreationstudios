@@ -8,3 +8,4 @@ The application can be accessed at: https://main.d3bxerbrq7xerv.amplifyapp.com/p
 
 The application is built on the Vue Framework using the Vuetify, Store, and Router plugins.
 
+![alt text](https://github.com/matthewwalk/newcreationstudios/blob/main/Capture.PNG?raw=true)
