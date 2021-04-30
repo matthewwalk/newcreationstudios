@@ -1,13 +1,19 @@
 <template>
-  <v-container></v-container>
+<v-container></v-container>
 </template>
 
 <script>
-export default {
+import { mapActions } from "vuex";
 
-}
+export default {
+  methods: {
+    ...mapActions(["setWelcome"]),
+  },
+  mounted() {
+    this.setWelcome(false);
+  }
+};
 </script>
 
 <style>
-
 </style>

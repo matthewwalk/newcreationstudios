@@ -5,9 +5,6 @@ import welcome from "./welcome";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {},
   modules: {
     welcome
   },

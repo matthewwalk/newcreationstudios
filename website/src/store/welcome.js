@@ -8,7 +8,7 @@ const getters = {
   },
 };
 
-const mutations = {
+const actions = {
   setWelcome: (state, welcome) => {
     state.welcome = welcome;
   },
@@ -17,5 +17,5 @@ const mutations = {
 export default {
   state,
   getters,
-  mutations,
+  actions,
 };

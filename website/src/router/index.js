@@ -25,7 +25,7 @@ const routerOptions = [
     component: "videography",
   },
   {
-    path: "/",
+    path: "/*",
     component: "welcome",
   },
 ];
