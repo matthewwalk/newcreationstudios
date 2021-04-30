@@ -32,7 +32,7 @@
         <v-img contain src="../../assets/img/logo.png"></v-img>
       </v-avatar>
 
-      <v-toolbar-title class="ma-2">
+      <v-toolbar-title class="pa-2">
         <div v-if="$vuetify.breakpoint.mdAndUp">New Creation Studios</div>
         <div v-else>NCS</div>
       </v-toolbar-title>
