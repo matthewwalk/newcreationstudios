@@ -1,16 +1,16 @@
 <template>
   <v-container fluid>
     <v-container fluid>
-      <v-card class="mx-auto">
-        <v-img src="../assets/img/photos/me_cropped.jpg">
+      <v-card class="mx-auto" color="transparent" elevation="0">
+        <v-img src="../assets/img/photos/me_cropped.jpg" contain>
           <v-slide-y-reverse-transition appear>
-            <v-card-title class="display-2 font-weight-black white--text">
+            <v-card-title class="text-md-h3 text-h4 font-weight-medium">
               Photography
             </v-card-title>
           </v-slide-y-reverse-transition>
 
           <v-slide-y-reverse-transition appear>
-            <v-card-subtitle class="display-1 font-weight-bold">
+            <v-card-subtitle class="text-md-h5 text-h6 font-weight-bold">
               About Me
             </v-card-subtitle>
           </v-slide-y-reverse-transition>
@@ -21,42 +21,44 @@
             <v-row>
               <v-col md="5">
                 <v-slide-x-transition appear>
-                  <v-card color="transparent" outlined>
-                    <v-card-text>
-                      <p class="text-left body-1 white--text">
-                        Born in South America, raised in Toronto, photography
-                        has been a part of my life for a long time. My interest
-                        in photography started in high school, when I took a
-                        class to get an easy credit. Little did I know that it
-                        would spark a passion and a love for this craft.
-                        Although I developed an interest and passion in
-                        photography, I ended up persuing music in college. But I
-                        still loved to take photos on my Minolta 35mm film
-                        camera..
-                      </p>
+                  <v-card
+                    :color="
+                      $vuetify.breakpoint.mdAndUp
+                        ? 'transparent'
+                        : 'rgba(0,0,0,0.7)'
+                    "
+                    outlined
+                  >
+                    <v-card-text class="text-left text-md-body-1 text-body-2 white--text">
+                      Born in South America, raised in Toronto, photography has
+                      been a part of my life for a long time. My interest in
+                      photography started in high school, when I took a class to
+                      get an easy credit. Little did I know that it would spark
+                      a passion and a love for this craft. Although I developed
+                      an interest and passion in photography, I ended up
+                      persuing music in college. But I still loved to take
+                      photos on my Minolta 35mm film camera..
                     </v-card-text>
                   </v-card>
                 </v-slide-x-transition>
               </v-col>
-              <v-spacer></v-spacer>
+              <v-spacer v-if="$vuetify.breakpoint.mdAndUp"></v-spacer>
             </v-row>
 
             <v-row>
-              <v-spacer></v-spacer>
+              <v-spacer v-if="$vuetify.breakpoint.mdAndUp"></v-spacer>
               <v-col md="5">
                 <v-slide-x-reverse-transition appear>
                   <v-card color="rgba(0,0,0,0.7)">
-                    <v-card-text>
-                      <p class="text-right body-1 font-weight-bold white--text">
-                        While persuing a career in music I was also working on
-                        film technique photographing landscapes; and portraits
-                        of family and friends. Since then, I have developed my
-                        skills at portrature, family, fashion, achitechture and
-                        now lifestyle and urban photography. I strive to make
-                        every photography session an exciting and fun
-                        experience; while capturing the essence of the moment
-                        with an artistic vision.
-                      </p>
+                    <v-card-text class="text-right text-md-body-1 text-body-2 white--text">
+                      While persuing a career in music I was also working on
+                      film technique photographing landscapes; and portraits of
+                      family and friends. Since then, I have developed my skills
+                      at portrature, family, fashion, achitechture and now
+                      lifestyle and urban photography. I strive to make every
+                      photography session an exciting and fun experience; while
+                      capturing the essence of the moment with an artistic
+                      vision.
                     </v-card-text>
                   </v-card>
                 </v-slide-x-reverse-transition>
@@ -69,7 +71,7 @@
 
     <v-container fluid>
       <v-card class="mx-auto pa-4" elevation="2">
-        <v-card-title class="display-1 font-weight-black white--text">
+        <v-card-title class="text-md-h3 text-h4 font-weight-medium white--text">
           Customer Testimony
         </v-card-title>
 
@@ -90,7 +92,7 @@
 
     <v-container fluid>
       <v-card class="mx-auto pa-4" elevation="2">
-        <v-card-title class="display-1 font-weight-black white--text">
+        <v-card-title class="text-md-h3 text-h4 font-weight-medium white--text">
           Portfolio
         </v-card-title>
         <v-divider></v-divider>
@@ -101,7 +103,7 @@
 
     <v-container fluid>
       <v-card class="mx-auto pa-4" elevation="2">
-        <v-card-title class="display-1 font-weight-black white--text">
+        <v-card-title class="text-md-h3 text-h4 font-weight-medium white--text">
           Like what you see?
         </v-card-title>
         <v-divider></v-divider>
@@ -171,6 +173,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>
