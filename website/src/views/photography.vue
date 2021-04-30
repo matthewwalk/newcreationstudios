@@ -29,7 +29,9 @@
                     "
                     outlined
                   >
-                    <v-card-text class="text-left text-md-body-1 text-body-2 white--text">
+                    <v-card-text
+                      class="text-left text-md-body-1 text-body-2 white--text"
+                    >
                       Born in South America, raised in Toronto, photography has
                       been a part of my life for a long time. My interest in
                       photography started in high school, when I took a class to
@@ -50,7 +52,9 @@
               <v-col md="5">
                 <v-slide-x-reverse-transition appear>
                   <v-card color="rgba(0,0,0,0.7)">
-                    <v-card-text class="text-right text-md-body-1 text-body-2 white--text">
+                    <v-card-text
+                      class="text-right text-md-body-1 text-body-2 white--text"
+                    >
                       While persuing a career in music I was also working on
                       film technique photographing landscapes; and portraits of
                       family and friends. Since then, I have developed my skills
@@ -70,49 +74,54 @@
     </v-container>
 
     <v-container fluid>
-      <v-card class="mx-auto pa-4" elevation="2">
-        <v-card-title class="text-md-h3 text-h4 font-weight-medium white--text">
+      <v-card class="mx-auto pa-2" elevation="2">
+        <v-card-title class="text-md-h3 text-h5 font-weight-medium white--text">
           Customer Testimony
         </v-card-title>
 
+        <v-card-subtitle class="text-md-subtitle-1 text-subtitle-2">
+          See what our customers have to say about Johnny ...
+        </v-card-subtitle>
+
         <v-divider></v-divider>
 
-        <v-row>
-          <v-col v-for="(testimony, index) in testimonies" :key="index">
-            <Testimony
-              :name="testimony.name"
-              :role="testimony.role"
-              :rating="testimony.rating"
-              :text="testimony.text"
-            />
-          </v-col>
-        </v-row>
+        <v-card-text>
+          <v-row>
+            <v-col v-for="(testimony, index) in testimonies" :key="index">
+              <Testimony
+                :name="testimony.name"
+                :role="testimony.role"
+                :rating="testimony.rating"
+                :text="testimony.text"
+              />
+            </v-col>
+          </v-row>
+        </v-card-text>
       </v-card>
     </v-container>
 
     <v-container fluid>
-      <v-card class="mx-auto pa-4" elevation="2">
+      <v-card class="mx-auto pa-2" elevation="2">
         <v-card-title class="text-md-h3 text-h4 font-weight-medium white--text">
           Portfolio
         </v-card-title>
         <v-divider></v-divider>
+        <Gallery />
       </v-card>
-
-      <Gallery />
     </v-container>
 
     <v-container fluid>
-      <v-card class="mx-auto pa-4" elevation="2">
-        <v-card-title class="text-md-h3 text-h4 font-weight-medium white--text">
+      <v-card class="mx-auto pa-2" elevation="2">
+        <v-card-title class="text-md-h3 text-h5 font-weight-medium white--text">
           Like what you see?
         </v-card-title>
         <v-divider></v-divider>
         <v-card-text>
-          <p class="text-left body-1 white--text">
+          <p class="text-left text-md-body-1 text-body-2 white--text">
             Thinking of booking a phography session? Questions about the
             process?
           </p>
-          <p class="text-left body-1 white--text">
+          <p class="text-left text-md-body-1 text-body-2 white--text">
             Feel free to reach out through the contact page, or email me at
             <a
               href="mailto:johnny@newcreationstudios.com"
@@ -160,6 +169,13 @@ export default {
           rating: 4.7,
           text:
             "Johnny took my headshots and I have recieved multiple compliments on them. I would reccomend him to my friends / colleagues / family.",
+        },
+        {
+          name: "Allen",
+          role: "Software Engineer",
+          rating: 4.3,
+          text:
+            "We took photos of my old Chevy; couldn't have been happier with the result!",
         },
         {
           name: "Alah",
