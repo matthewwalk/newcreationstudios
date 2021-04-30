@@ -41,7 +41,7 @@
 
       <template v-if="$vuetify.breakpoint.mdAndUp" v-slot:extension>
         <v-tabs
-          v-model="tab"
+          :v-model="tab"
           grow
           color="white"
           background-color="rgba(0,0,0,0.70)"
@@ -63,9 +63,9 @@
       </template>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" dark absolute temporary>
+    <v-navigation-drawer v-model="drawer" app dark temporary>
       <v-list nav dense>
-        <v-list-item-group v-model="tab">
+        <v-list-item-group :v-model="tab">
           <v-list-item v-for="item in items" :key="item.id" :to="item.path">
             <v-list-item-title>
               {{ item.title }}
